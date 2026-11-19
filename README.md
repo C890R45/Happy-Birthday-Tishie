@@ -1,53 +1,43 @@
-# 🎂 Birthday Wish Website Template
+# A Birthday Just for You ♡
 
-A creative and heartfelt way to wish someone a happy birthday — through a personalized website!  
-Originally created for someone special, now open for everyone to use and share 💖  
+A romantic, responsive birthday microsite with a heartfelt letter, memory timeline, keepsake gallery, candle interaction and optional age counter.
 
----
-## 🌐 Live Demo  
-🎉 **[https://happybirthday-template.netlify.app/](https://happybirthday-template.netlify.app/)**
+## Live demo
 
-Fork it, customize it, and create a unique birthday experience for your loved ones 💝  
----
+Deploy this repository with GitHub Pages, Netlify or Vercel to share your birthday surprise.
 
-## 🌟 Overview
+## Personalise it
 
-This website lets you craft a **beautiful digital birthday surprise** for your loved ones.  
-You can add photos, videos, messages, and memories — all in one elegant, scroll-based layout.  
+1. Open `script.js` and edit the `birthdayConfig` object:
+   - `name`: the name shown in the greeting and letter.
+   - `birthDate`: optional date in `YYYY-MM-DD` format. Leave it blank to hide the age counter.
+2. Edit the letter and memory captions in `index.html`.
+3. Replace the gradient memory and gallery tiles with your own photos if you wish. Keep images in the `img/` folder and add descriptive alt text when adding image elements.
+4. Change colours and typography in `style.css`.
 
----
+## Features
 
-## ✨ Features
+- Responsive romantic pastel design
+- Personalised birthday greeting and letter
+- Memory timeline and keepsake gallery
+- Interactive photo viewer
+- Birthday cake candle interaction and confetti
+- Optional live age counter
+- Falling decorative petals
+- Keyboard focus styles and reduced-motion support
+- No build step or JavaScript framework required
 
-- 🎬 **Hero Section** – Add a stunning **photo** or **video** of the birthday person with their name and background music.  
-- 💌 **Message Section** – Write a sweet or funny **birthday message** just for them.  
-- 📖 **Story Section** – Tell the story of your bond — how you met, favorite memories, or funny moments.  
-- 🏅 **Hall of Fame Section** – Highlight everything they **love** — from hobbies to food to movies.  
-- 🖼️ **Gallery Section** – Showcase a collection of memorable **photos** or collages.  
+## Run locally
 
----
+Open `index.html` in a browser, or serve the folder with any static file server.
 
-## ⚙️ How to Use
+## Deploy with GitHub Pages
 
-1. **Fork** or **Download** this repository.  
-2. Open the project folder and edit the content in the HTML and JSS file and add photos of your choice
-3. Deploy it using **Vercel**, **Netlify**, or **GitHub Pages**.
----
+1. Open the repository's **Settings → Pages**.
+2. Choose **Deploy from a branch**.
+3. Select `main` and the `/ (root)` folder.
+4. Save and wait for GitHub Pages to publish the site.
 
-## Message from Creator
-Hi there! 👋
+## Notes
 
-If you're reading this, chances are you're creating something special for someone you care about. A small surprise like this can make a birthday even more memorable, and I'm really glad this template could be part of that moment.
-
-This birthday website template was made to help you celebrate your loved ones in a unique way. All you need to do is make a few simple changes in the code and add photos of the person you're celebrating. Customize it with your own message, memories, or pictures to make it truly personal.
-
-If you run into any issues while setting it up, or if you need a little help making it perfect, feel free to reach out. I’d be happy to help.
-
-Feel free to contact me anytime.
-
-Regards,<br>
-Harman<br>
-[harmanjss10@gmail.com](mailto:harmanjss10@gmail.com)
-
----
-Created with ❤️ by [@Harman](https://github.com/Harmann60)
+The site uses Google Fonts from a CDN. If the fonts cannot load, system fallbacks are used. No visitor data is collected and no backend is required.
