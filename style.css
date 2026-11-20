@@ -179,3 +179,39 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px
     margin-inline: auto;
   }
 }
+
+
+/* Ten things I love about you */
+#favourite-things .favourites {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 850px;
+  margin-inline: auto;
+  text-align: left;
+}
+#favourite-things .favourites article {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 104px;
+  padding: 22px 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px #815c5c0a;
+}
+#favourite-things .favourites article > span {
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--blush);
+  font: 600 .95rem var(--serif);
+}
+#favourite-things .favourites h3 {
+  margin: 0;
+  font: 500 1.12rem/1.45 var(--serif);
+}
+@media (max-width: 700px) {
+  #favourite-things .favourites { grid-template-columns: 1fr; }
+}
