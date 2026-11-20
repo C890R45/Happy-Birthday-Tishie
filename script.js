@@ -63,23 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Accessible keepsake viewer. Replace the CSS artwork with photos as desired.
-  const lightbox = document.querySelector("#lightbox");
-  const art = document.querySelector("#lightbox-art");
-  const caption = document.querySelector("#lightbox-caption");
-  document.querySelectorAll(".gallery-item").forEach(item => {
-    item.addEventListener("click", () => {
-      art.className = `lightbox-art ${item.className.replace("gallery-item", "").trim()}`;
-      caption.textContent = item.dataset.caption || "A favourite memory";
-      lightbox.showModal();
-    });
-  });
-  const closeLightbox = () => lightbox.close();
-  document.querySelector("#lightbox-close").addEventListener("click", closeLightbox);
-  lightbox.addEventListener("click", event => {
-    if (event.target === lightbox) closeLightbox();
-  });
-
   // Subtle drifting petals; disabled for reduced-motion preferences.
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const layer = document.querySelector(".petal-layer");
