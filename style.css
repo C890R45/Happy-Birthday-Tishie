@@ -130,3 +130,52 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px
 @media (max-width: 700px) {
   .memory-photo { width: min(100%, 430px); margin-inline: auto; }
 }
+
+
+/* Simple, readable full-screen conversation screenshots */
+.memory-photo {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  min-height: 0;
+  aspect-ratio: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: visible;
+  border-radius: 14px;
+  background: transparent;
+  box-shadow: 0 12px 32px #79545b18;
+}
+.memory-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: initial;
+  background: transparent;
+  border-radius: 14px;
+}
+.memory-photo figcaption {
+  position: static;
+  min-height: 0;
+  display: block;
+  padding: 12px 4px 0;
+  color: var(--rose-dark);
+  background: transparent;
+  text-align: center;
+}
+.memory-photo figcaption span {
+  display: none;
+}
+.memory-photo figcaption small {
+  font-size: .82rem;
+  text-align: center;
+  color: var(--rose-dark);
+}
+@media (max-width: 700px) {
+  .memory-photo {
+    width: 100%;
+    max-width: 460px;
+    margin-inline: auto;
+  }
+}
