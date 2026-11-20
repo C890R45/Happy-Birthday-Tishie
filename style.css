@@ -83,3 +83,50 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* Real chapter keepsakes */
+.memory-photo {
+  margin: 0;
+  min-height: 0;
+  aspect-ratio: 3 / 4;
+  border-radius: 24px 24px 10px 10px;
+  display: block;
+  background: #f3e7e5;
+  box-shadow: 0 22px 50px #79545b24;
+  isolation: isolate;
+}
+.memory-photo::before { content: none; }
+.memory-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: #f8efed;
+}
+.memory-photo figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  color: #fff;
+  background: linear-gradient(transparent, #39242dcf);
+}
+.memory-photo figcaption span {
+  position: static;
+  flex: 0 0 auto;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+.memory-photo figcaption small {
+  font-size: .78rem;
+  text-align: right;
+}
+@media (max-width: 700px) {
+  .memory-photo { width: min(100%, 430px); margin-inline: auto; }
+}
